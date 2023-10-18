@@ -5,8 +5,8 @@
 #                                                     +:+ +:+         +:+      #
 #    By: ioduwole <ioduwole@student.42wolfsburg.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2023/09/29 22:33:23 by ioduwole          #+#    #+#              #
-#    Updated: 2023/09/29 22:33:33 by ioduwole         ###   ########.fr        #
+#    Created: 2023/09/29 22:33:03 by ioduwole          #+#    #+#              #
+#    Updated: 2023/09/29 22:52:06 by ioduwole         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,7 +24,7 @@ all: $(NAME)
 
 $(NAME): $(OBJ)
 	@$(CC) $(OBJ) -o $(NAME)
-	@echo $(GREEN)"Ex00 compiled"
+	@echo $(GREEN)"Ex01 compiled"
 
 %.o: %.cpp
 	@$(CC) $(CFLAGS) -c $< -o $@

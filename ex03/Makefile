@@ -1,16 +1,16 @@
 # **************************************************************************** #
 #                                                                              #
 #                                                         :::      ::::::::    #
-#    makefile                                           :+:      :+:    :+:    #
+#    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
 #    By: ioduwole <ioduwole@student.42wolfsburg.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2023/09/29 22:33:23 by ioduwole          #+#    #+#              #
-#    Updated: 2023/09/29 22:33:33 by ioduwole         ###   ########.fr        #
+#    Created: 2023/10/03 14:28:01 by ioduwole          #+#    #+#              #
+#    Updated: 2023/10/03 14:28:21 by ioduwole         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = zombie
+NAME = weapon
 
 SRC = $(wildcard *.cpp)
 
@@ -24,7 +24,7 @@ all: $(NAME)
 
 $(NAME): $(OBJ)
 	@$(CC) $(OBJ) -o $(NAME)
-	@echo $(GREEN)"Ex00 compiled"
+	@echo $(GREEN)"Ex03 compiled"
 
 %.o: %.cpp
 	@$(CC) $(CFLAGS) -c $< -o $@

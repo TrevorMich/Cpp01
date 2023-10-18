@@ -5,12 +5,12 @@
 #                                                     +:+ +:+         +:+      #
 #    By: ioduwole <ioduwole@student.42wolfsburg.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2023/09/29 22:33:23 by ioduwole          #+#    #+#              #
-#    Updated: 2023/09/29 22:33:33 by ioduwole         ###   ########.fr        #
+#    Created: 2023/10/03 14:03:55 by ioduwole          #+#    #+#              #
+#    Updated: 2023/10/03 14:05:05 by ioduwole         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = zombie
+NAME = main
 
 SRC = $(wildcard *.cpp)
 
@@ -24,7 +24,7 @@ all: $(NAME)
 
 $(NAME): $(OBJ)
 	@$(CC) $(OBJ) -o $(NAME)
-	@echo $(GREEN)"Ex00 compiled"
+	@echo $(GREEN)"Ex02 compiled"
 
 %.o: %.cpp
 	@$(CC) $(CFLAGS) -c $< -o $@
